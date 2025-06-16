@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quick2PDF - Image to PDF</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon-quick2pdf.ico" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="Quick2PDF-Logo.png" alt="Quick2PDF Logo" class="logo" />
+    <h1>📸 Quick2PDF</h1>
+    <button id="darkToggle">🌓</button>
+  </header>
+
+  <section class="upload-area" id="dropArea">
+    <p>📤 Upload your images from Gallery or Camera</p>
+    <button onclick="document.getElementById('imageInput').click()">📁 Select Images</button>
+    <input type="file" id="imageInput" accept="image/*" multiple hidden>
+  </section>
+
+  <section id="imagePreview" class="image-preview"></section>
+
+  <section class="options">
+    <h2>📄 PDF Settings</h2>
+    <label>Layout:
+      <select id="layout">
+        <option value="single">Single per page</option>
+        <option value="grid">Grid (4 per page)</option>
+      </select>
+    </label>
+    <label>Page Size:
+      <select id="pageSize">
+        <option value="a4">A4</option>
+        <option value="letter">Letter</option>
+      </select>
+    </label>
+  </section>
+
+  <button id="downloadBtn">📥 Generate PDF</button>
+
+  <footer>
+    <p>Made with ❤️ by Quick2PDF</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+    </html>
