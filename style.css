@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #f0f0f0;
+}
+
+header {
+  background: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#darkToggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-area {
+  background: white;
+  border: 2px dashed #aaa;
+  text-align: center;
+  padding: 40px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.upload-area button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.upload-area button:hover {
+  background-color: #005fa3;
+}
+
+.image-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.preview-img {
+  position: relative;
+  margin: 10px;
+}
+
+.preview-img canvas {
+  max-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+.remove-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.options {
+  text-align: center;
+  margin: 20px;
+}
+
+.options select {
+  padding: 10px;
+  margin: 10px;
+}
+
+#downloadBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f7f7f7;
+  margin-top: 30px;
+}
